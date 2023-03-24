@@ -15,15 +15,32 @@ public class JavaProgram {
         }*/
 
         //REVERSE THE INTEGER
-        int n= 12345;
-        int rev = 0;
-        int rem=0;
-        while (n != 0) {
-            rem = n%10;
-            rev = rev*10 + rem;
-            n=n/10;
-        }
-        System.out.print(rev);
+        // int n= 12345;
+        // int rev = 0;
+        // int rem=0;
+        // while (n != 0) {
+        //     rem = n%10;
+        //     rev = rev*10 + rem;
+        //     n=n/10;
+        // }
+        // System.out.print(rev);
+
+        //CHECK PALIMDREOME
+       int num = 121;
+       int rem = 0;
+       int rev=0;
+       while(rem!=0){
+           rem = num%10;
+
+           rev = rev *10+ rem;
+           num = num/10;
+       }
+       if(num == rev){
+           System.out.print(num +" is palindrome");
+       }
+       else {
+           System.out.print(num+" is Not Palindrome");
+       }
     }
 }
 
